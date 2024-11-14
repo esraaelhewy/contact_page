@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../images/background@3x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#FFFFFF;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+.parent{
+    margin:10px 200px;
+}
+.parent > h1{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 900;
+    width:80%;
+    margin: auto;
+}
+.parent > p{
+    width:80%;
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+}
+.parent .contact{
+    width:90%;
+    background-color: #9f5bb1;
+    opacity:0.9;
+    margin:60px auto;
+    border-radius: 26px;
+    padding:20px 40px;
+}
+.contact .child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+form > div input , select , textarea, button{
+    width:100%;
+    border-radius: 16px;
+    padding:20px 40px;
+    margin:10px;
+    font-weight: bold;
+    font-size: 1rem;
+    border:none;
+}
+textarea , button{
+    width:100%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+textarea{
+    height: 200px;
+}
+button{
+    color:#4036A9;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+.author-info a {
+    text-decoration: none;
+}
+
+/* ---Media for Tablet--- */
+@media (max-width:1024px) {
+    .parent{
+        margin:5px 50px;
+    }
+    .parent > h1{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
+        width:70%;
+        margin: auto;
+    }
+    .parent > p{
+        width:70%;
+        font-size: 1.8rem;
+        text-align: center;
+        margin: auto;
+    }
+    .parent .contact{
+        width:90%;
+    }
+
+}
+
+/* --Media for Mobile-- */
+@media (max-width:500px) {
+    .parent{
+        margin:8px 10px;
+    }
+    .parent > h1{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+        width:90%;
+        margin: auto;
+    }
+    .parent > p{
+        width:90%;
+        font-size: .8rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .parent .contact{
+        width:99%;
+        margin:20px auto;
+        border-radius: 16px;
+    }
+    .contact .child {
+        display: block;
+    }
+    form > div input , select , textarea, button{
+        width:100%;
+        border-radius: 8px;
+        padding:10px 20px;
+        margin:5px;
+        font-weight: bold;
+        font-size: .6rem;
+    }
+    textarea , button{
+        width:100%;
+        margin: 10px auto;
+        cursor: pointer;
+    }
+    textarea{
+        height: 100px;
+    }
+    button{
+        color:#4036A9;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+    
+}
